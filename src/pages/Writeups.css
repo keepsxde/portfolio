@@ -1,0 +1,160 @@
+.writeups {
+  padding-bottom: 80px;
+}
+
+/* ─── Filter bar ───────────────────────────────── */
+.writeups-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 32px;
+}
+
+.filter-btn {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 6px 16px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  background: var(--bg-card);
+  transition: color var(--transition), border-color var(--transition), background var(--transition);
+  letter-spacing: 0.03em;
+}
+
+.filter-btn:hover {
+  color: var(--text-primary);
+  border-color: var(--green);
+  background: var(--green-glow);
+}
+
+.filter-btn--active {
+  color: var(--green);
+  border-color: var(--green);
+  background: var(--green-glow);
+}
+
+/* ─── List ─────────────────────────────────────── */
+.writeups-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* ─── Card ─────────────────────────────────────── */
+.writeup-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 22px 26px 16px;
+  transition: border-color var(--transition);
+}
+
+.writeup-card:hover {
+  border-color: var(--border-accent);
+}
+
+.writeup-card__meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.writeup-card__meta-left {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.writeup-card__points {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.writeup-card__title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 3px;
+}
+
+.writeup-card__ctf {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--cyan-dim);
+  margin-bottom: 10px;
+}
+
+.writeup-card__summary {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+/* ─── Expandable content ───────────────────────── */
+.writeup-card__content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+.writeup-card__content--open {
+  max-height: 2000px;
+}
+
+.writeup-card__content-inner {
+  margin-top: 18px;
+  padding-top: 18px;
+  border-top: 1px solid var(--border);
+}
+
+.writeup-card__pre {
+  white-space: pre-wrap;
+  word-break: break-word;
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px 20px;
+}
+
+/* ─── Toggle ───────────────────────────────────── */
+.writeup-card__toggle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--green);
+  margin-top: 14px;
+  padding: 4px 0;
+  transition: opacity var(--transition);
+}
+
+.writeup-card__toggle:hover {
+  opacity: 0.7;
+}
+
+.writeup-card__chevron {
+  width: 14px;
+  height: 14px;
+  transition: transform 0.3s ease;
+}
+
+.writeup-card__chevron--open {
+  transform: rotate(180deg);
+}
+
+@media (max-width: 480px) {
+  .writeup-card {
+    padding: 18px 16px 14px;
+  }
+}

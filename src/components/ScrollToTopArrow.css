@@ -1,0 +1,36 @@
+.scroll-arrow {
+  position: fixed;
+  left: 20px;
+  bottom: 40px;
+  z-index: 90;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-card);
+  color: var(--green);
+  border: 1px solid var(--border-accent);
+  border-radius: var(--radius);
+  box-shadow: 0 0 14px var(--green-glow), 0 4px 16px rgba(0,0,0,0.4);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(12px);
+  transition: opacity 0.25s ease, transform 0.25s ease, background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.scroll-arrow--visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.scroll-arrow:hover {
+  background: var(--green-glow);
+  box-shadow: 0 0 20px rgba(0, 255, 65, 0.25), 0 4px 20px rgba(0,0,0,0.5);
+  transform: translateY(-2px);
+}
+
+.scroll-arrow:active {
+  transform: translateY(0);
+}
