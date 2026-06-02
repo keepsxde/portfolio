@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { NavLink, useLocation } from 'react-router-dom'
 import './Navbar.css'
 
-const NAME = 'YOUR_NAME'
+const NAME = 'Mykhailo Chumak'
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)

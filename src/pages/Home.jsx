@@ -1,18 +1,19 @@
 import './Home.css'
 
-const NAME = 'YOUR_NAME'
+const NAME = 'Mykhailo Chumak'
 
 const STATS = [
-  { label: 'Degree', value: 'B.IT — Cybersecurity & Software Engineering' },
+  { label: 'Degree', value: 'Bachelor of IT - Cybersecurity & Software Engineering' },
   { label: 'Status', value: 'Undergraduate' },
-  { label: 'Interests', value: 'Penetration Testing · CTF · Secure Dev' },
-  { label: 'Location', value: 'YOUR_LOCATION' },
+  { label: 'Interests', value: 'Penetration Testing · CTF · Networking · Cloud Security' },
+  { label: 'Location', value: 'Sydney, Australia' },
 ]
 
 const BADGES = [
   { text: 'Cybersecurity', color: 'green' },
   { text: 'Software Engineering', color: 'cyan' },
-  { text: 'Penetration Testing', color: 'purple' },
+  { text: 'Cloud Security', color: 'purple' },
+  { text: 'Networking', color: 'green' },
   { text: 'CTF Player', color: 'red' },
 ]
 
@@ -38,9 +39,22 @@ export default function Home() {
 
           <p className="hero__bio">
             {/* Replace this paragraph with your own introduction */}
-            Add a short bio here — who you are, what drives your passion for
-            cybersecurity, and what you're currently working toward. Keep it
-            concise: two or three sentences is perfect.
+            Hey there! I'm assuming you already know who I am...
+            <br></br>
+            Hint: my name is right above this text.
+            <br></br>
+            It's nice to e-meet you! Because I already know who you are ;)
+            <br></br>
+            <br></br>
+            I love learning "how this and that works".
+            That's why I am passionate about cybersecurity. I create things. I break things.
+            Things break me... It's a never-ending cycle of ups and downs that
+            I chose to take on. And I tell you what - I do not regret a single bit.
+            <br></br>
+            <br></br>
+            I'm currently working towards mastering cloud security, especially
+            in AWS. My current goal is to become a Cloud Security Specialist
+            (and also to leak your private data into the dark-web).
           </p>
 
           <div className="hero__cta">
